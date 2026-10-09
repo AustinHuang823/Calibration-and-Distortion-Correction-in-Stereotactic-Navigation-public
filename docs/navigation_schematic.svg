@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="440" viewBox="0 0 600 440" role="img" aria-label="Schematic of electromagnetic surgical navigation: a tracker base, a tracked pointer touching a CT-imaged bone on a workspace with fiducial posts, and the frames F_reg and F_ptr; the pointer tip position p_tip is the unknown to solve for, inside a distorted field"><rect width="600" height="440" rx="14" fill="#0a0e14"/>
+              <g style="fill:none;stroke:#2a3b52;stroke-width:1.5">
+                <path d="M70 380 L430 380 L550 270 L190 270 Z" style="fill:#141d2c;fill-opacity:.55"/>
+                <path d="M100 353 Q300 340 460 353"/><path d="M130 325 Q320 312 490 325"/><path d="M160 298 Q340 285 520 298"/>
+                <path d="M160 380 Q240 320 280 270"/><path d="M250 380 Q330 322 370 270"/><path d="M340 380 Q420 322 460 270"/>
+              </g>
+              <g style="fill:#111926;stroke:#94a5ba;stroke-width:2">
+                <rect x="96" y="318" width="14" height="40" rx="3"/><rect x="470" y="262" width="14" height="40" rx="3"/><rect x="392" y="330" width="14" height="40" rx="3"/>
+              </g>
+              <path d="M188 322 C176 300 194 284 214 292 C246 304 300 300 338 288 C356 270 386 276 386 296 C392 318 370 330 352 322 C312 334 254 336 214 330 C200 342 182 338 188 322 Z" style="fill:#94a5ba;fill-opacity:.28;stroke:#94a5ba;stroke-width:2"/>
+              <g style="stroke:#3ee6c4;stroke-width:3;stroke-linecap:round">
+                <path d="M224 318 L266 318"/><path d="M224 318 L224 280"/><path d="M224 318 L200 340"/>
+              </g>
+              <text x="152" y="282" style="fill:#3ee6c4;font:600 21px ui-monospace,SFMono-Regular,Menlo,monospace">CT</text>
+              <g>
+                <rect x="430" y="34" width="130" height="78" rx="12" style="fill:#111926;stroke:#2ba690;stroke-width:2"/>
+                <g style="fill:none;stroke:#3ee6c4;stroke-width:2;stroke-linecap:round;opacity:.85">
+                  <path d="M478 73 a17 17 0 0 1 34 0"/><path d="M468 73 a27 27 0 0 1 54 0"/><path d="M458 73 a37 37 0 0 1 74 0"/>
+                </g>
+                <circle cx="495" cy="73" r="5" style="fill:#3ee6c4"/>
+                <text x="495" y="142" text-anchor="middle" style="fill:#94a5ba;font:500 19px ui-monospace,SFMono-Regular,Menlo,monospace">EM tracker</text>
+              </g>
+              <g style="stroke-linecap:round">
+                <path d="M356 92 L330 168" style="stroke:#e9eff6;stroke-width:16;opacity:.85"/>
+                <path d="M330 168 L306 282" style="stroke:#e9eff6;stroke-width:4"/>
+                <circle cx="350" cy="108" r="4.5" style="fill:#111926"/><circle cx="344" cy="126" r="4.5" style="fill:#111926"/><circle cx="338" cy="144" r="4.5" style="fill:#111926"/>
+              </g>
+              <circle cx="306" cy="284" r="8" style="fill:#f5c542"/>
+              <g style="fill:none;stroke-width:2.2;stroke-dasharray:7 7">
+                <path d="M436 100 C360 170 300 250 230 312" style="stroke:#3ee6c4"/>
+                <path d="M432 70 C410 70 384 82 362 98" style="stroke:#3ee6c4"/>
+                <path d="M327 150 L310 270" style="stroke:#f5c542"/>
+              </g>
+              <text x="372" y="218" style="fill:#3ee6c4;font:600 21px ui-monospace,SFMono-Regular,Menlo,monospace">F_reg</text>
+              <text x="352" y="54" style="fill:#3ee6c4;font:600 21px ui-monospace,SFMono-Regular,Menlo,monospace">F_ptr</text>
+              <text x="200" y="232" style="fill:#f5c542;font:600 21px ui-monospace,SFMono-Regular,Menlo,monospace">p_tip = ?</text>
+              <path d="M286 238 L301 268" style="stroke:#f5c542;stroke-width:2;fill:none"/>
+              <text x="48" y="420" style="fill:#7d8fa5;font:500 17px ui-monospace,SFMono-Regular,Menlo,monospace">field distortion · pivot calibration · registration</text>
+            </svg>

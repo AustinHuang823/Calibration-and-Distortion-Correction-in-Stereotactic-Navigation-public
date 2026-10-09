@@ -1,22 +1,26 @@
-# Project Overview: Calibration and Distortion Correction in Stereotactic Navigation
+# Stereotactic Navigation: Calibration & Distortion Correction
 
-## Introduction
-This project, conducted at the Laboratory for Computational Sensing and Robotics (LCSR) at Johns Hopkins University, focused on advanced calibration techniques and distortion correction within stereotactic navigation systems. Utilizing a combination of 1D, 2D, and 3D interpolation techniques alongside Bezier curves and volumes, we aimed to enhance the precision of tip location determination in CT frames, crucial for medical applications.
+Surgical navigation only helps if the system knows exactly where the instrument tip is. Electromagnetic tracking readings are distorted, so this project calibrates the pointer and corrects the field distortion to locate the tip in CT coordinates to within a millimeter.
 
-## Objectives
-- To optimize the calibration process and correct distortions in stereotactic navigation systems.
-- Implement interpolation methods to achieve high accuracy in tip location determination.
+<p align="center">
+  <img src="docs/navigation_schematic.svg" width="560" alt="Schematic of electromagnetic surgical navigation: a tracker, a tracked pointer touching a CT-imaged bone, the frames F_reg and F_ptr, and the unknown tip position p_tip inside a distorted field" />
+  <br />
+  <sub>The problem: find the pointer tip in CT coordinates through a distorted tracking field.</sub>
+</p>
 
-## Methodology
-We employed Bezier curves and volumes for interpolation, ensuring robust calibration and distortion correction. Techniques like tensor-form interpolation polynomials and least squares problem solving were pivotal.
+## Highlights
 
-## Challenges and Solutions
-We addressed several challenges, including handling distorted data and ensuring accurate tip location determination. Through meticulous mathematical modeling and algorithmic strategies, we succeeded in significantly enhancing system reliability.
+- **Distortion correction.** Fits a 5th-degree Bernstein (Bézier volume) polynomial that maps distorted tracker readings back to true positions.
+- **Calibration and registration.** Pivot calibration for the pointer tip and 3D point-cloud registration from the tracker frame to the CT frame.
+- **Sub-millimeter result.** Corrected tip positions stay within 0.86 mm of ground truth across all six validation datasets.
+- **Validated end to end.** Automated tests for the interpolation package and error statistics with visual checks against the given ground truth.
 
-## Note
-Please note that the code and detailed materials related to this project are not publicly available due to the class's rule prohibiting the public sharing of assignment solutions.
+## Report
 
-For further inquiries or discussion on the project's concepts and methodologies, please reach out through academic channels or direct communication.
+The method, math and full error tables are in the [report (PDF)](report.pdf). The code is not public because it is a course solution (Computer Integrated Surgery I, Johns Hopkins University); I'm happy to walk through it.
 
-## Conclusion
-This project not only demonstrated the application of complex mathematical concepts to practical problems but also pushed the boundaries of what's achievable in robotic navigation and medical imaging.
+## Team
+
+Austin Huang and Danny Chang.
+
+More projects: [austinhuang823.github.io](https://austinhuang823.github.io)
